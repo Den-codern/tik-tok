@@ -1,0 +1,47 @@
+.new {
+  height: 100%;
+  overflow: hidden;
+  position: relative;
+}
+.newWrapper {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  position: relative;
+  z-index: 2;
+  flex-direction: column;
+  width: 100%;
+
+  height: 100%;
+}
+
+.dummyVideo {
+  background-color: #a9a9a9;
+  padding: 80px;
+  display: inline-block;
+}
+
+.video {
+  width: 70%;
+  text-align: center;
+}
+
+.btn {
+  width: 200px;
+  height: 50px;
+  font-size: 20px;
+  border-radius: 15px;
+  background-color: #000;
+  color: #fff;
+  cursor: pointer;
+}
+
+.borderRed {
+  border: 1px solid red;
+}
+
+.error {
+  color: red;
+  text-align: center;
+  margin-top: 20px;
+}

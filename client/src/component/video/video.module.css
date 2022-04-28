@@ -1,0 +1,28 @@
+.video {
+  width: 100%;
+}
+
+.clip {
+  position: relative;
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.heartIcon {
+  right: 10px;
+  top: 50%;
+  position: absolute;
+  text-align: center;
+}
+.playIcon {
+  right: 50%;
+  display: none;
+  top: 47%;
+  position: absolute;
+  transform: translate(50%, 50%);
+}
+.show {
+  display: block;
+}
