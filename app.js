@@ -13,5 +13,11 @@ app.use(express.json());
 app.use(cors());
 app.use("/api/video", videoRouter);
 app.use("/api/auth", authRouter);
+if (process.env.NODE_ENV === "production") {
+  app.use("/", express.static(path.join(__dirname, "client", "build")));
 
+  app.get("*", (req, res) => {
+    res.sendFile(path.resolve(__dirname, "client", "build", "index.html"));
+  });
+}
 app.listen(PORT, () => console.log(`App has been started on port ${PORT}...`));
