@@ -1,7 +1,7 @@
 {
   "name": "toktik",
   "version": "1.0.0",
-  "description": "",
+  "description": "Fast short video watch",
   "main": "index.js",
   "scripts": {
     "start": "cross-env NODE_ENV=production node app.js",
